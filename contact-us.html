@@ -144,7 +144,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-4">
                                             <!-- <a href="#" class="btn btn-warning btn-md"></a> -->
-                                            <input class="btn btn-warning btn-md" type="submit" name="submit" value="Gửi" />
+                                            <input class="btn btn-warning btn-md" type="button" name="submit" id="Gui" value="Gửi" />
                                         </div>
                                     </div>
                                 </form>
@@ -278,7 +278,11 @@
         <!-- Google maps API -->
         <script src="http://maps.googleapis.com/maps/api/js"></script>
         <script>
-			
+			$().ready(function(){
+				$('#Gui').click(function(){
+					alert('Đã gửi bình luận thành công !');
+				})
+			});
         </script>
 		
     </body>
